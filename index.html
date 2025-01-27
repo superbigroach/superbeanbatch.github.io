@@ -104,7 +104,7 @@
     <script>
         document.getElementById('signup-form').addEventListener('submit', async function(e) {
             e.preventDefault(); // Prevent default form submission
-            const email = document.getElementById('email').value.trim(); // Trim to avoid unnecessary spaces
+            const email = document.getElementById('email').value.trim(); // Get email and trim whitespace
             const messageDiv = document.getElementById('message');
 
             // Reset the message container
@@ -112,11 +112,10 @@
             messageDiv.className = 'message';
 
             try {
-                // Make a POST request
                 const response = await fetch('https://script.google.com/macros/s/AKfycbwYihlAQP6LBCkocQID1CcCT191Af3IaSiqNc6Dqw1hNvpuxo3sRJvxypZ7l9h8OfWXyA/exec', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                    body: new URLSearchParams({ email })
+                    body: new URLSearchParams({ email }),
                 });
 
                 if (!response.ok) {
