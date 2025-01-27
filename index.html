@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prompt World - Social Wellness Platform</title>
     <style>
+        /* General Page Styling */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -18,26 +19,44 @@
 
         /* Header Styling */
         .header {
-            background: linear-gradient(135deg, #6a1b9a, #1e88e5); /* Purple to blue gradient */
+            background: linear-gradient(135deg, #6a1b9a, #1e88e5); /* Purple-blue gradient */
             color: #fff;
             padding: 40px 20px;
             text-align: center;
-            border-bottom: 5px solid #3949ab; /* Dark blue border */
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            font-weight: bold;
         }
 
-        .header h1 {
-            font-size: 3rem;
-            margin: 0;
+        /* Footer Styling */
+        .footer {
+            background: linear-gradient(135deg, #6a1b9a, #1e88e5); /* Purple-blue gradient */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            font-weight: bold;
+            margin-top: auto;
         }
 
-        .header p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-            font-weight: 500;
+        /* Footer Icons */
+        .footer-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
         }
 
-        /* Main Content Container */
+        .footer-icons img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .footer-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Signup Box Styling */
         .container {
             max-width: 900px;
             margin: 50px auto;
@@ -47,20 +66,12 @@
             border-radius: 8px;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
             color: #fff;
-            border: 3px solid #3949ab; /* Dark blue border */
+            border: 3px solid #3949ab; /* Blue border */
         }
 
         .container h2 {
             font-size: 2rem;
-            margin-bottom: 20px;
-            color: #ff6a6a; /* Orange for emphasis */
-            text-shadow: -2px -2px 4px #000, 2px 2px 4px #000; /* Thicker text outline */
-        }
-
-        .container ul {
-            text-align: left;
-            margin: 20px 0;
-            padding-left: 20px;
+            color: #ff6a6a; /* Orange text color */
         }
 
         .container ul li {
@@ -68,12 +79,9 @@
             font-weight: bold;
         }
 
-        .form-group {
-            margin-bottom: 15px;
-        }
-
+        /* Email Input Styling */
         input[type="email"] {
-            width: 100%;
+            width: 60%;
             padding: 12px;
             font-size: 1rem;
             background: #555;
@@ -84,10 +92,12 @@
         }
 
         input[type="email"]::placeholder {
-            color: #ddd;
+            color: #ddd; /* Placeholder text color */
         }
 
+        /* Button Styling */
         button {
+            margin-top: 15px;
             padding: 12px 25px;
             font-size: 1.1rem;
             color: #fff;
@@ -103,13 +113,14 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
-        .signup-line {
+        /* Form Note Styling */
+        .form-note {
             margin-top: 10px;
-            font-weight: bold;
-            color: #fff;
+            font-size: 0.9rem;
+            font-weight: bold; /* Bold text for the note */
         }
 
-        /* Videos and Image Section */
+        /* Media Section Styling */
         .media-row {
             display: flex;
             justify-content: center;
@@ -124,73 +135,44 @@
             border: 3px solid #3949ab;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
             padding: 10px;
-            max-width: 300px;
+            width: 300px;
+            height: 400px; /* Doubled height */
             text-align: center;
         }
 
         .media-box video, .media-box img {
             max-width: 100%;
+            height: 100%;
             border-radius: 8px;
-        }
-
-        /* Footer Section */
-        .footer {
-            background: linear-gradient(135deg, #6a1b9a, #1e88e5); /* Purple to blue gradient */
-            color: #fff;
-            padding: 20px;
-            font-size: 0.9rem;
-            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-            text-align: center;
-            border-top: 5px solid #3949ab; /* Dark blue border */
-            font-weight: bold; /* Makes the footer text bold */
-            margin-top: auto;
-        }
-
-        .footer-icons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 15px;
-        }
-
-        .footer-icons img {
-            width: 40px;
-            height: 40px;
-            transition: transform 0.3s ease;
-        }
-
-        .footer-icons img:hover {
-            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Header -->
     <div class="header">
         <h1>Welcome to Prompt World</h1>
         <p>Combining AI, Health, and Blockchain into a New Social Wellness Platform</p>
     </div>
 
-    <!-- Main Content -->
+    <!-- Signup Section -->
     <div class="container">
         <h2>Empower Your Wellness Journey Today</h2>
-        <p>
-            <ul>
-                <li><strong>Explore groundbreaking features:</strong> Health tracking, AI-powered insights, and blockchain-secured data.</li>
-                <li><strong>Financial Incentives:</strong> Contribute to a healthier, more connected community while unlocking multiple revenue streams.</li>
-                <li><strong>Redefine collaboration:</strong> Join a digital wellness ecosystem where creators and users thrive together.</li>
-            </ul>
-        </p>
+        <ul>
+            <li><strong>Explore groundbreaking features:</strong> Health tracking, AI-powered insights, and blockchain-secured data.</li>
+            <li><strong>Financial Incentives:</strong> Contribute to a healthier, more connected community while unlocking multiple revenue streams.</li>
+            <li><strong>Redefine collaboration:</strong> Join a digital wellness ecosystem where creators and users thrive together.</li>
+        </ul>
         <form action="https://script.google.com/macros/s/YOUR_SCRIPT_URL/exec" method="POST">
             <div class="form-group">
                 <input type="email" name="email" placeholder="Enter your email address" required>
+                <br>
+                <button type="submit">Sign Up</button>
             </div>
-            <button type="submit">Sign Up</button>
         </form>
-        <p class="signup-line">Sign up to receive exclusive updates about our seed presale and early access to our groundbreaking app.</p>
+        <p class="form-note">Sign up to receive exclusive updates about our seed presale and early access to our groundbreaking app.</p>
     </div>
 
-    <!-- Videos and Image Section -->
+    <!-- Media Section -->
     <div class="media-row">
         <div class="media-box">
             <video controls>
@@ -199,7 +181,7 @@
             </video>
         </div>
         <div class="media-box">
-            <img src="example_image.jpg" alt="Sample Content">
+            <img src="google.jpg" alt="Sample Image">
         </div>
         <div class="media-box">
             <video controls>
@@ -209,15 +191,15 @@
         </div>
     </div>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <div class="footer">
         <div class="footer-icons">
-            <a href="https://twitter.com" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="https://instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
-            <a href="https://tiktok.com" target="_blank"><img src="tiktok-icon.png" alt="TikTok"></a>
-            <a href="https://youtube.com" target="_blank"><img src="youtube-icon.png" alt="YouTube"></a>
-            <a href="#"><img src="ios-store-icon.png" alt="App Store (iOS)"></a>
-            <a href="#"><img src="google-play-icon.png" alt="Google Play"></a>
+            <a href="https://twitter.com" target="_blank"><img src="x.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="instagram.jpg" alt="Instagram"></a>
+            <a href="https://tiktok.com" target="_blank"><img src="tiktok.png" alt="TikTok"></a>
+            <a href="https://youtube.com" target="_blank"><img src="youtube.webp" alt="YouTube"></a>
+            <a href="#"><img src="ios.png" alt="App Store (iOS)"></a>
+            <a href="#"><img src="google.jpg" alt="Google Play"></a>
         </div>
         <p>We respect your privacy. Your email will only be used for updates and notifications about Prompt World.</p>
         <p>Inquiries: redmaplehealthcanada@gmail.com</p>
