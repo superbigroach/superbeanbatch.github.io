@@ -9,19 +9,17 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f5f7fa;
+            background: linear-gradient(135deg, #ff6a85, #ff915f);
             color: #333;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
         }
         .header {
-            background: linear-gradient(135deg, #87CEFA, #FF8C69); /* Light blue to salmon */
+            background: linear-gradient(135deg, #6a00ff, #4a90e2);
             color: #fff;
             padding: 40px 20px;
             text-align: center;
             border-bottom: 4px solid rgba(255, 255, 255, 0.2);
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            border-radius: 0 0 15px 15px;
         }
         .header h1 {
             font-size: 3rem;
@@ -41,12 +39,12 @@
             border-radius: 15px;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
             color: #333;
-            flex-grow: 1;
+            border: 2px solid #6a00ff;
         }
         .container h2 {
             font-size: 2rem;
             margin-bottom: 20px;
-            color: #008080; /* Teal for contrast */
+            color: #ff6a85;
         }
         .container p {
             font-size: 1.1rem;
@@ -69,7 +67,7 @@
             padding: 12px 25px;
             font-size: 1.1rem;
             color: #fff;
-            background: linear-gradient(135deg, #87CEFA, #FF8C69); /* Matching gradient for button */
+            background: linear-gradient(135deg, #ff6a85, #ff915f);
             border: none;
             border-radius: 8px;
             cursor: pointer;
@@ -80,14 +78,16 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         .footer {
-            background: linear-gradient(135deg, #87CEFA, #FF8C69);
+            background: linear-gradient(135deg, #6a00ff, #4a90e2);
             color: #fff;
-            padding: 10px;
-            font-size: 0.9rem;s
-            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
             border-top: 4px solid rgba(255, 255, 255, 0.2);
             text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-            margin-top: auto; /* Ensure footer stays at the bottom */
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
         }
     </style>
 </head>
@@ -105,9 +105,9 @@
         <p>
             Discover groundbreaking features in health tracking, AI-powered insights, and blockchain-secured data. Together, we redefine wellness and collaboration.
         </p>
-        <p>Sign up to receive exclusive updates about our seed presale and early access to our groundbreaking app.</p>
+        <p> Sign up to receive exclusive updates about our seed presale and early access to our groundbreaking app.</p>
 
-        <form action="https://script.google.com/macros/s/AKfycbzItWr2gCbrDfmV4vYy06_CfZ1inUoWi9tyKU8pWXe-5erzqPhJEwW8khMF__okh6h4jQ/exec" method="POST">
+        <form action="https://script.google.com/macros/s/YOUR_SCRIPT_URL/exec" method="POST">
             <div class="form-group">
                 <input type="email" name="email" placeholder="Enter your email address" required>
             </div>
