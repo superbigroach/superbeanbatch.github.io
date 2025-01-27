@@ -11,9 +11,12 @@
             padding: 0;
             background: #f5f7fa;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         .header {
-            background: linear-gradient(135deg, #6a00ff, #ff0077);
+            background: linear-gradient(135deg, #87CEFA, #FF8C69); /* Light blue to salmon */
             color: #fff;
             padding: 40px 20px;
             text-align: center;
@@ -38,11 +41,12 @@
             border-radius: 15px;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
             color: #333;
+            flex-grow: 1;
         }
         .container h2 {
             font-size: 2rem;
             margin-bottom: 20px;
-            color: #6a00ff;
+            color: #008080; /* Teal for contrast */
         }
         .container p {
             font-size: 1.1rem;
@@ -65,7 +69,7 @@
             padding: 12px 25px;
             font-size: 1.1rem;
             color: #fff;
-            background: linear-gradient(135deg, #6a00ff, #ff0077);
+            background: linear-gradient(135deg, #87CEFA, #FF8C69); /* Matching gradient for button */
             border: none;
             border-radius: 8px;
             cursor: pointer;
@@ -76,12 +80,14 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         .footer {
-            background: linear-gradient(135deg, #6a00ff, #ff0077);
+            background: linear-gradient(135deg, #87CEFA, #FF8C69);
             color: #fff;
-            padding: 20px;
+            padding: 10px;
             font-size: 0.9rem;
+            text-align: center;
             border-top: 4px solid rgba(255, 255, 255, 0.2);
             text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            margin-top: auto; /* Ensure footer stays at the bottom */
         }
     </style>
 </head>
@@ -99,8 +105,7 @@
         <p>
             Discover groundbreaking features in health tracking, AI-powered insights, and blockchain-secured data. Together, we redefine wellness and collaboration.
         </p>
-        <p> Sign up to receive exclusive updates about our seed presale and early access to our groundbreaking app.</p>
-
+        <p>Sign up to receive exclusive updates about our seed presale and early access to our groundbreaking app.</p>
 
         <form action="https://script.google.com/macros/s/AKfycbzItWr2gCbrDfmV4vYy06_CfZ1inUoWi9tyKU8pWXe-5erzqPhJEwW8khMF__okh6h4jQ/exec" method="POST">
             <div class="form-group">
